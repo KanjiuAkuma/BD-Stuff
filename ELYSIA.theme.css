@@ -9,30 +9,27 @@
 * @authorLink https://github.com/GoldenLys
 */
 
-/* Updated by Kanjiu Akuma */
-
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/aerobase.css");/* DO NOT REMOVE THIS LINE */
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/RGB/2.css");/* DO NOT REMOVE THIS LINE */
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/aerobase.css");/* DO NOT REMOVE THIS LINE */
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/RGB/4.css");/* DO NOT REMOVE THIS LINE */
 
 /*  PLUGINS (optional)  */
 @import url("https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap");
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/HoverMemberList.css");
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/NoOffline.css");
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/HorizontalServerList.css");
-@import url("https://kanjiuakuma.github.io/BetterDiscord-Elysia/Letters-in-HSL.css");
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/HoverMemberList.css");
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/NoOffline.css");
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/HorizontalServerList.css");
 
 /*  GENERAL CONFIG  */
 
 :root {
 	--title: "";
 	--font: "Quicksand", sans-serif;
-	--logo: url("https://cdn.discordapp.com/avatars/185817952371736577/a_656e9055dd77d7e5b2fb1d161ba1521a.gif?size=256");
-	--background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://i.imgur.com/iqAakkG.jpg);
+	--logo: url("https://kanjiuakuma.github.io/bd-stuff/resources/logo.gif");
+	--background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://kanjiuakuma.github.io/bd-stuff/resources/background.jpg);
 	--C1: rgb(130, 0, 216);
 	--C2: rgb(20, 255, 20);
 	--C3: rgb(0, 225, 255);
 	--C4: rgb(255, 80, 10);
-	--time: 20s;
+	--time: 10s;
 	--ServerSize: 45px;
 	--ServerColumns: 1;
 
@@ -63,12 +60,12 @@
 	--ActiveBox: rgb(235 235 235);
 
 	/* CUSTOM TEXTS */
-	--JoinUs: "Hey! Wanna have some fun.. Join US !";
+	--JoinUs: "Look, you got invited!";
 	--AddNewServer: "➕ Add a new server";
 	--ProfilePic: "Watch me";
 	--Close: "x";
 	--Resize: "o";
-	--Hide: "__";
+	--Hide: "_";
 	--Unread: "!";
 	--Options: "⚙️";
 	--Emoji: "🙂";
@@ -80,7 +77,7 @@
 	--WelcomeMessage: "";
 	--Watermark: "";
 	--EditStatus: "Put another status";
-	/* --Folders: "📁"; */
+	--Folders: "📁";
 	--FoldersOpen: "💠";
 	--Micro: "🎙️";
 	--Headset: "🎧";
