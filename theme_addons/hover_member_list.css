@@ -11,11 +11,14 @@
 /* Credits to PurpleWizzard for making the original version */
 
 :root {
-    --size-hidden: 10; /* percentage shown, when the member list is hidden */
+    --size-hidden: 30; /* percentage shown, when the member list is hidden */
     --transition-time: 300ms; /* time it takes for the member list to show/hide */
+    --hover-area: 0; /* size of the area left of the member list, that reacts to mouse over */
 
     /* internal variables */
+    --px-hover: calc(var(--hover-area) * 1px);
     --px-hidden: calc((263 * (1 - var(--size-hidden) / 100)) * 1px);
+    --px-shown: calc(-1 * var(--px-hidden));
     --chat-margin-right: calc(263px - var(--px-hidden));
 }
 
@@ -40,7 +43,7 @@
 /* PRE-HOVER DIV to fix spam-open bugs */
 
 .membersWrap-2h-GB4:before {
-    width: 15px;
+    width: var(--px-hover);
     content: "";
 }
 
@@ -56,7 +59,7 @@
 /* MEMBERLIST CONTENT */
 
 .members-1998pB {
-    width: 265px;
+    /* width: 265px; */
     overflow: hidden;
     border-radius: .5em 0 0 .5em;
     transition: all 500ms;
@@ -64,10 +67,10 @@
 }
 
 .membersWrap-2h-GB4:hover .members-1998pB {
-    -webkit-transform: translateX(-237px);
-    transform: translateX(-237px);
+    -webkit-transform: translateX(var(--px-shown));
+    transform: translateX(var(--px-shown));
     overflow: auto;
-    width: 265px!important;
+    /* width: 265px!important; */
     transition: all var(--transition-time);
 }
 
