@@ -40,6 +40,7 @@
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
 	/* GENERAL */
+	--popup-background-color: rgba(0, 0, 0, .2);
 	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
@@ -63,9 +64,9 @@
 	--background-blur: 0px; /* app background blur [default: 0px] */
 
 	/* Gradients */
-    --gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
-    --gradient-color2: rgba(0, 160, 0, 1); /* secondary color [default: var(--hover-color) */
-    --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
+	--gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
+	--gradient-color2: rgba(0, 160, 0, 1); /* secondary color [default: var(--hover-color) */
+	--gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
 	
 	/* HOME BUTTON ICON */
 	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
@@ -73,7 +74,7 @@
 	--home-size: 40px; /* home button icon size [default: 40px] */
 	
 	/* MODAL BACKDROP */
-	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+	--backdrop-overlay: rgba(0, 0, 0, .8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
 	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
 	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
 	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
@@ -88,7 +89,7 @@
 	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
 	
 	/* USER POPOUT BACKGROUND */
-	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-popout-image: var(--popup-background-color); /* app background image (link must be HTTPS) [default: var(---background-image)] */
 	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
 	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
 	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
@@ -102,7 +103,7 @@
 	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
 	
 	/* USER MODAL BACKGROUND */
-	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-modal-image: var(--popup-background-color); /* app background image (link must be HTTPS) [default: var(---background-image)] */
 	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
 	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
 	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
@@ -123,11 +124,11 @@
 	/* MY PLUGINS */
 
 	/* Hover member list */
-	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
-	--hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
-	--hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
-	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
-	--hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
+	/* --hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
+	/* --hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
+	/* --hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
+	/* --hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
+	/* --hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
 
 	/* Horizontal server list */
 	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
@@ -139,4 +140,28 @@
 /* remove 'watermark' */
 .wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
 	content: "" !important;
+}
+
+/* spotify hotfix */
+.root-SR8cQa>.topSectionSpotify-1lI0-P {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
+}
+.root-SR8cQa>.topSectionStreaming-1Tpf5X {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
+} 
+
+.userPopout-3XzG_A .headerStreaming-2FjmGz {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
+}
+.userPopout-3XzG_A .headerSpotify-zpWxgT {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
+}
+.userPopout-3XzG_A .headerXbox-3G-4PF {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
 }
