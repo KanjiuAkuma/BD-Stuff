@@ -12,6 +12,9 @@
 
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
+@import url(https://clearvision.github.io/Addons/gradients.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css)
+@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css)
 
 /* SETTINGS */
 :root {
@@ -45,7 +48,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-image: url(https://kanjiuakuma.github.io/bd-stuff/resources/background.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -57,6 +60,11 @@
 	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
 	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
 	--background-blur: 0px; /* app background blur [default: 0px] */
+
+	/* Gradients */
+    --gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
+    --gradient-color2: var(--hover-color); /* secondary color [default: var(--hover-color) */
+    --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
 	
 	/* HOME BUTTON ICON */
 	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
