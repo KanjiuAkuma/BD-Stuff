@@ -11,15 +11,15 @@
 /* Credits to PurpleWizzard for making the original version */
 
 :root {
-    --size-hidden: 30; /* percentage shown, when the member list is hidden */
-    --transition-time: 300ms; /* time it takes for the member list to show/hide */
-    --hover-area: 0; /* size of the area left of the member list, that reacts to mouse over */
+    --hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
+    --hml-transition-time: 300ms; /* time it takes for the member list to show/hide */
+    --hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over */
 
     /* internal variables */
-    --px-hover: calc(var(--hover-area) * 1px);
-    --px-hidden: calc((263 * (1 - var(--size-hidden) / 100)) * 1px);
-    --px-shown: calc(-1 * var(--px-hidden));
-    --chat-margin-right: calc(263px - var(--px-hidden));
+    --hml-px-hover: calc(var(--hml-hover-area) * 1px);
+    --hml-px-hidden: calc((263 * (1 - var(--hml-size-hidden) / 100)) * 1px);
+    --hml-px-shown: calc(-1 * var(--hml-px-hidden));
+    --hml-chat-margin-right: calc(263px - var(--hml-px-hidden));
 }
 
 .membersWrap-2h-GB4, .membersWrap-2h-GB4 .scroller-2FKFPG {
@@ -32,18 +32,18 @@
 /* GROUP HEADER */
 .membersGroup-v9BXpm {
     opacity: 0;
-    transition: all var(--transition-time);
+    transition: all var(--hml-transition-time);
 }
 
 .membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
-    transition: all var(--transition-time);
+    transition: all var(--hml-transition-time);
     opacity: 1;
 }
 
 /* PRE-HOVER DIV to fix spam-open bugs */
 
 .membersWrap-2h-GB4:before {
-    width: var(--px-hover);
+    width: var(--hml-px-hover);
     content: "";
 }
 
@@ -51,8 +51,8 @@
 /* 263 is all the way to the right */
 
 .membersWrap-2h-GB4 {
-    -webkit-transform: translateX(var(--px-hidden));
-    transform: translateX(var(--px-hidden));
+    -webkit-transform: translateX(var(--hml-px-hidden));
+    transform: translateX(var(--hml-px-hidden));
     position: absolute;
 }
 
@@ -63,17 +63,17 @@
     overflow: hidden;
     border-radius: .5em 0 0 .5em;
     transition: all 500ms;
-    -webkit-transition: all var(--transition-time);
+    -webkit-transition: all var(--hml-transition-time);
 }
 
 .membersWrap-2h-GB4:hover .members-1998pB {
-    -webkit-transform: translateX(var(--px-shown));
-    transform: translateX(var(--px-shown));
+    -webkit-transform: translateX(var(--hml-px-shown));
+    transform: translateX(var(--hml-px-shown));
     overflow: auto;
     /* width: 265px!important; */
-    transition: all var(--transition-time);
+    transition: all var(--hml-transition-time);
 }
 
 /* RESIZE CHAT CONTENT TO SHOW THE SCROLLBAR */
 
-.chatContent-a9vAAp { margin-right: var(--chat-margin-right);}
+.chatContent-a9vAAp { margin-right: var(--hml-chat-margin-right);}
