@@ -124,11 +124,11 @@
 	/* MY PLUGINS */
 
 	/* Hover member list */
-	/* --hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
-	/* --hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
-	/* --hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
-	/* --hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
-	/* --hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
+	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
+	--hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
+	--hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
+	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
+	--hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
 
 	/* Horizontal server list */
 	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
