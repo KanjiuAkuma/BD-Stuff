@@ -86,6 +86,10 @@ chatContent-a9vAAp da-chatContent
 aria-lable= " (channel)"
 */ 
 
-.chatContent-a9vAAp[aria-label="guides (channel)"] { 
+.chatContent-a9vAAp { 
 	margin-right: var(--hml-chat-margin-right);
+}
+
+.chatContent-a9vAAp[aria-label=" (channel)"] { 
+	margin-right: 0px !important;
 }
