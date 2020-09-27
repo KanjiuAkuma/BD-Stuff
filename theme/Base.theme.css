@@ -13,8 +13,9 @@
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 @import url(https://clearvision.github.io/Addons/gradients.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css)
-@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css)
+@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css);
+
 
 /* SETTINGS */
 :root {
@@ -27,8 +28,8 @@
 	
 	/* Customization Patch */
 	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-	--channel-color:  rgba(255,255,255,0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-	--muted-color: rgba(255,255,255,0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+	--channel-color:  rgba(255,255,255,0.9); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--muted-color: rgba(255,255,255,0.5); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/     
 
 	/* STATUS COLORS */
@@ -46,8 +47,8 @@
 	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
 
 	/* APP BACKGROUND */
-	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.7); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
 	--background-image: url(https://kanjiuakuma.github.io/bd-stuff/resources/background.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
@@ -63,7 +64,7 @@
 
 	/* Gradients */
     --gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
-    --gradient-color2: var(--hover-color); /* secondary color [default: var(--hover-color) */
+    --gradient-color2: rgba(0, 160, 0, 1); /* secondary color [default: var(--hover-color) */
     --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
 	
 	/* HOME BUTTON ICON */
@@ -118,4 +119,24 @@
 	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
 	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
 	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+
+	/* MY PLUGINS */
+
+	/* Hover member list */
+	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
+	--hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
+	--hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
+	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
+	--hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
+
+	/* Horizontal server list */
+	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+	--server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+}
+
+/* Modifications */
+
+/* remove 'watermark' */
+.wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
+	content: "" !important;
 }
