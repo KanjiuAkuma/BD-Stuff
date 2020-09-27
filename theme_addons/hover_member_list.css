@@ -78,4 +78,14 @@
 
 /* RESIZE CHAT CONTENT TO SHOW THE SCROLLBAR */
 
-.chatContent-a9vAAp { margin-right: var(--hml-chat-margin-right);}
+/* 
+chat-3bRxxu da-chat
+content-yTz4x3 da-content
+chatContent-a9vAAp da-chatContent 
+
+aria-lable= " (channel)"
+*/ 
+
+.chatContent-a9vAAp[aria-label="guides (channel)"] { 
+	margin-right: var(--hml-chat-margin-right);
+}
