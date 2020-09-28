@@ -138,7 +138,7 @@
 
 /* Modifications */
 
-/* remove 'watermark' */
+/* watermark */
 .wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
 	content: "" !important;
 }
@@ -146,7 +146,7 @@
 	content: "" !important;
 }
 
-/* spotify hotfix */
+/* spotify playing profile background */
 .root-SR8cQa>.topSectionSpotify-1lI0-P {
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
 }
@@ -170,7 +170,7 @@
     !important;
 }
 
-/* Tab background color fix */
+/* Tab background color */
 .channelTabs-tabContainer {
 	background: rgba(0, 0, 0, 0);
 }
@@ -186,4 +186,12 @@
 	position: absolute;
 	top: 9px;
 	right: 5px;
+}
+
+/* Spoiler border (what ever)*/
+.da-spoilerText {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
