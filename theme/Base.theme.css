@@ -13,7 +13,8 @@
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 @import url(https://clearvision.github.io/Addons/gradients.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css);
+
+
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css);
 
 
@@ -164,4 +165,22 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
     center/cover,linear-gradient(to bottom, transparent, transparent) 
     !important;
+}
+
+/* Tab background color fix */
+.channelTabs-tabContainer {
+	background: rgba(0, 0, 0, 0);
+}
+.channelTabs-tab {
+	background: rgba(0, 0, 0, .3);
+}
+
+.channelTabs-selected {
+	background: rgba(255, 255, 255, .2);
+}
+
+.channelTabs-closeTab {
+	position: absolute;
+	top: 9px;
+	right: 5px;
 }
