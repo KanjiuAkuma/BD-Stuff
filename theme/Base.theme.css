@@ -142,6 +142,9 @@
 .wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
 	content: "" !important;
 }
+.container-3baos1:before, .container-3baos1:after {
+	content: "" !important;
+}
 
 /* spotify hotfix */
 .root-SR8cQa>.topSectionSpotify-1lI0-P {
