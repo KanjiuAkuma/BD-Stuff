@@ -6,9 +6,6 @@
 * @authorId 226677096091484160
 * @invite acQjXZD
 */
-
-/* Modified so open tab functions switch to the new tab automatically */
-
 /*@cc_on
 @if (@_jscript)
 	
@@ -397,13 +394,24 @@ module.exports = (() => {
 					});
 				}
 				saveChannel(guildId, channelId, name, iconUrl){
+					var ndx = this.state.tabs.length;
+					var url = `/channels/${guildId || "@me"}/${channelId}`;
 					this.setState({
-						tabs: [...this.state.tabs, {
-							url: `/channels/${guildId || "@me"}/${channelId}`,
-							name,
-							iconUrl
-						}]
+						tabs: [...this.state.tabs.map((tab, index) => {
+								return Object.assign({}, tab, {selected: false});
+							}), 
+							{
+								url: url,
+								selected: true,
+								name,
+								iconUrl
+							}
+						],
+						selectedTabIndex: ndx,
 					}, this.props.plugin.saveSettings);
+					switching = true;
+					DiscordModules.NavigationUtils.transitionTo(url);
+					switching = false;
 				}
 				renameFav(currentName, favIndex){
 					let name = currentName;
