@@ -231,6 +231,7 @@
 	border-radius: 5px !important;
 	position: absolute;
 	z-index: 10;
+	margin-top: 10px !important;
 }
 
 /* fix close button clickability */
