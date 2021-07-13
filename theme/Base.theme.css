@@ -159,7 +159,7 @@
 
 /* Modifications */
 
-/* watermark */
+/* remove clear vision watermark */
 .wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
 	content: "" !important;
 }
@@ -167,7 +167,7 @@
 	content: "" !important;
 }
 
-/* spotify playing profile background */
+/* fix spotify playing profile background */
 .root-SR8cQa>.topSectionSpotify-1lI0-P {
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
 }
@@ -191,25 +191,7 @@
     !important;
 }
 
-/* Tab background color */
-.channelTabs-tabContainer {
-	background: rgba(0, 0, 0, 0);
-}
-.channelTabs-tab {
-	background: rgba(0, 0, 0, .3);
-}
-
-.channelTabs-selected {
-	background: rgba(255, 255, 255, .2);
-}
-
-.channelTabs-closeTab {
-	position: absolute;
-	top: 9px;
-	right: 5px;
-}
-
-/* Spoiler border (what ever)*/
+/* fix spoiler border (what ever)*/
 .da-spoilerText {
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -217,22 +199,41 @@
 	border-top-right-radius: 5px;
 }
 
-/* discord title bar */
+/* remove 'top column' for discord title bar, fix overlaying plugin repo */
 .titleBar-AC4pGV {
-	height: 0;
+	position: absolute;
+	z-index: 9;
 }
 
-/* discord watermark */
+/* remove discord watermark */
 .wordmarkWindows-1v0lYD {
-	width: 0;
-	height: 0;
+	display: none !important;
 }
 
-/* Add friend color 
-item-3HknzM
-item-PXvHYJ
-themed-OHr7kt
-*/
+/* remove greem 'Add friend' button background color */
 .themed-OHr7kt {
 	background: rgba(0, 0, 0, 0) !important;
+}
+
+/* remove space below self */
+.container-3baos1 {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+/* plugin repo */
+
+/* adjust notification size, add rounding, make overlay */
+.notice-3bPHh- {
+	width: 50%;
+	align-self: center;
+	border-radius: 5px !important;
+	position: absolute;
+	z-index: 10;
+}
+
+/* fix close button clickability */
+.closeButton-3cJIM4 {
+	z-index: 10;
 }
