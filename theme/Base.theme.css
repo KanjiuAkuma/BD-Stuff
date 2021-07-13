@@ -222,6 +222,11 @@
 	margin-bottom: 0;
 }
 
+/* server list: fix active server colors */
+.item-2hkk8m {
+	background: linear-gradient(var(--gradient-color1), var(--gradient-color2));
+}
+
 /* plugin repo */
 
 /* adjust notification size, add rounding, make overlay */
