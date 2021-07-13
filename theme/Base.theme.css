@@ -51,7 +51,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://cdn.discordapp.com/attachments/751218101969748108/864437299566870528/78215654_p0.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-image: url(https://kanjiuakuma.github.io/bd-stuff/resources/background.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -70,7 +70,7 @@
 	--gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
 	
 	/* HOME BUTTON ICON */
-	--home-icon: url(https://media.discordapp.net/attachments/751218101969748108/864434780724920360/warrior.png); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	--home-icon: url(https://kanjiuakuma.github.io/bd-stuff/resources/logo.png); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
 	--home-position: center; /* home button icon position [default: center] */
 	--home-size: 40px; /* home button icon size [default: 40px] */
 	
