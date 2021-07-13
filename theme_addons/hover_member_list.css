@@ -2,13 +2,16 @@
  * @name My Theme - Hover Member List
  * @author KanjiuAkuma
  * @version 1
- * @description My private discord theme
+ * @description Hover Member List
  * @source https://github.com/KanjiuAkuma/bd-stuff
  * @website https://github.com/KanjiuAkuma/bd-stuff
  * @invite 
  */
 
-/* Credits to PurpleWizzard for making the original version */
+/* 
+Credits to PurpleWizzard for making the original version 
+https://github.com/GoldenLys/
+*/
 
 :root {
 	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
