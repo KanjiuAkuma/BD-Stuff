@@ -3,7 +3,7 @@ My Custom Discord Theme
 Credits
 ===
 
-Base Theme
+Base Theme and Color Gradients
 > https://github.com/ClearVision
 
 Horizontal Server List
@@ -11,3 +11,6 @@ Horizontal Server List
 
 Hover Member List
 > https://github.com/GoldenLys
+
+Radial Status
+> https://discordstyles.github.io/RadialStatus
