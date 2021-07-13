@@ -15,6 +15,7 @@
 @import url(https://clearvision.github.io/Addons/gradients.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css);
+@import url("https://discordstyles.github.io/RadialStatus/base.css");
 
 
 /* SETTINGS */
@@ -49,8 +50,8 @@
 
 	/* APP BACKGROUND */
 	--background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
-	--background-overlay: rgba(0, 0, 0, 0.7); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://kanjiuakuma.github.io/bd-stuff/resources/background.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://cdn.discordapp.com/attachments/751218101969748108/864437299566870528/78215654_p0.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -64,12 +65,12 @@
 	--background-blur: 0px; /* app background blur [default: 0px] */
 
 	/* Gradients */
-	--gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
-	--gradient-color2: rgba(0, 160, 0, 1); /* secondary color [default: var(--hover-color) */
+	--gradient-color1: hsla(180, 100%, 30%, 100%); /* primary color [default: var(--main-color) */
+	--gradient-color2: hsla(240, 100%, 75%, 100%); /* secondary color [default: var(--hover-color) */
 	--gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
 	
 	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	--home-icon: url(https://media.discordapp.net/attachments/751218101969748108/864434780724920360/warrior.png); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
 	--home-position: center; /* home button icon position [default: center] */
 	--home-size: 40px; /* home button icon size [default: 40px] */
 	
@@ -125,14 +126,35 @@
 
 	/* Hover member list */
 	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
-	--hml-transition-time: 200ms; /* time it takes for the member list to show/hide */
+	--hml-transition-time: 120ms; /* time it takes for the member list to show/hide */
 	--hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
 	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
-	--hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
+	--hml-hover-area: 20; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
 
 	/* Horizontal server list */
-	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 45px));
 	--server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+
+	/* Radial status */
+	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+	--rs-online-color: #43b581; /* Colour for online status */
+	--rs-idle-color: #faa61a; /* Colour for idle status */
+	--rs-dnd-color: #f04747; /* Colour for dnd status */
+	--rs-offline-color: #636b75; /* Colour for offline status */
+	--rs-streaming-color: #643da7; /* Colour for streaming status */
+	--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+	--rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
 
 /* Modifications */
@@ -193,4 +215,15 @@
 	border-bottom-right-radius: 3px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+}
+
+/* discord title bar */
+.titleBar-AC4pGV {
+	height: 0;
+}
+
+/* discord watermark */
+.wordmarkWindows-1v0lYD {
+	width: 0;
+	height: 0;
 }
