@@ -68,15 +68,13 @@
 	background: linear-gradient(var(--gradient-color1), var(--gradient-color2));
 }
 
-/* plugin repo */
-
-/* adjust notification size, add rounding, make overlay */
+/* adjust notification size, add rounding, make overlay, set to top (z-index) */
 .notice-3bPHh- {
 	width: 50%;
 	align-self: center;
 	border-radius: 5px !important;
 	position: absolute;
-	z-index: 10;
+	z-index: 101;
 	margin-top: 10px !important;
 }
 
