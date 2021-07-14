@@ -1,0 +1,86 @@
+/* Modifications */
+
+/* remove clear vision watermark */
+.wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
+	content: "" !important;
+}
+.container-3baos1:before, .container-3baos1:after {
+	content: "" !important;
+}
+
+/* fix spotify playing profile background */
+.root-SR8cQa>.topSectionSpotify-1lI0-P {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
+}
+.root-SR8cQa>.topSectionStreaming-1Tpf5X {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
+} 
+
+.userPopout-3XzG_A .headerStreaming-2FjmGz {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
+}
+.userPopout-3XzG_A .headerSpotify-zpWxgT {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
+}
+.userPopout-3XzG_A .headerXbox-3G-4PF {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) 
+    center/cover,linear-gradient(to bottom, transparent, transparent) 
+    !important;
+}
+
+/* fix spoiler border (what ever)*/
+.da-spoilerText {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* remove 'top column' for discord title bar, fix overlaying plugin repo */
+.titleBar-AC4pGV {
+	position: absolute;
+	z-index: 9;
+}
+
+/* remove discord watermark */
+.wordmarkWindows-1v0lYD {
+	display: none !important;
+}
+
+/* remove greem 'Add friend' button background color */
+.themed-OHr7kt {
+	background: rgba(0, 0, 0, 0) !important;
+}
+
+/* remove space below self */
+.container-3baos1 {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+/* server list: fix active server colors */
+.item-2hkk8m {
+	background: linear-gradient(var(--gradient-color1), var(--gradient-color2));
+}
+
+/* plugin repo */
+
+/* adjust notification size, add rounding, make overlay */
+.notice-3bPHh- {
+	width: 50%;
+	align-self: center;
+	border-radius: 5px !important;
+	position: absolute;
+	z-index: 10;
+	margin-top: 10px !important;
+}
+
+/* fix close button clickability */
+.closeButton-3cJIM4 {
+	z-index: 10;
+}
