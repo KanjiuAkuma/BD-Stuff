@@ -2,7 +2,7 @@ My Custom Discord Theme
 
 by Kami-Kaze#0001
 
-[Preview!](https://cdn.discordapp.com/attachments/751218101969748108/865272875426775051/unknown.png)
+![Preview](https://cdn.discordapp.com/attachments/751218101969748108/865272875426775051/unknown.png)
 
 Features
 ===
