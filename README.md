@@ -1,6 +1,15 @@
 My Custom Discord Theme
 
-by @Kami-Kaze#0001
+by Kami-Kaze#0001
+
+[Preview!](https://cdn.discordapp.com/attachments/751218101969748108/865272875426775051/unknown.png)
+
+Features
+===
+- Member list collapses to the right if not hovered.
+- Horizontal server list at the top
+- Status indicators are rings arount user portraits instead of dots next to the icon
+- Custom 'Home' icon
 
 Installation
 ===
