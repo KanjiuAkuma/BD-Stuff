@@ -13,10 +13,10 @@
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 @import url(https://clearvision.github.io/Addons/gradients.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/hover_member_list.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/theme_addons/horizontal_server_list.css);
-@import url(https://discordstyles.github.io/RadialStatus/base.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme/patch.theme.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/addons/hover_member_list.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/addons/horizontal_server_list.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/addons/radial_status.css);
 
 
 /* SETTINGS */
