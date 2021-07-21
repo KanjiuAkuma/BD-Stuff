@@ -83,9 +83,7 @@
 	z-index: 10;
 }
 
-/* pins popout position */
-.layer-v9HyYc {
-	position: relative;
-	top: 65px !important;
-	right: 395px !important;
+/* pins popout size */
+.messagesPopoutWrap-1MQ1bW {
+	max-height: 700px !important;
 }
