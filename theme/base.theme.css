@@ -14,9 +14,10 @@
 @import url(https://clearvision.gitlab.io/v6/main.css);
 @import url(https://clearvision.github.io/Addons/gradients.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme/patch.theme.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/addons/hover_member_list.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/addons/horizontal_server_list.css);
+@import url(https://kanjiuakuma.github.io/bd-stuff/addons/hover_member_list.css); /* Requires Devilbros DisplayServersAsChannels Plugin */
+@import url(https://kanjiuakuma.github.io/bd-stuff/addons/hover_server_list.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/addons/radial_status.css);
+
 
 
 /* SETTINGS */
@@ -42,12 +43,12 @@
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
 	/* GENERAL */
-	--popup-background-color: rgba(0, 0, 0, .2);
 	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
 	--members-width: 240px; /* member list width [default: 240px] */
 	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
+	--popup-background-color: rgba(0, 0, 0, .2);
 
 	/* APP BACKGROUND */
 	--background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
@@ -132,9 +133,12 @@
 	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
 	--hml-hover-area: 20; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
 
-	/* Horizontal server list */
-	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 45px));
-	--server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+	/* Hover server list */
+	--hsl-size-hidden: 5; /* percentage shown, when the server list is hidden */
+	--hsl-transition-time: 300ms; /* time it takes for the server list to show/hide */
+	--hsl-hover-area: 35; /* size of the area right of the server list, that reacts to mouse over */
+	--hsl-background-color-shown: rgba(0, 0, 0, .9);
+	--hsl-background-color-hidden: rgba(0, 0, 0, .1);
 
 	/* Radial status */
 	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
