@@ -1,10 +1,23 @@
+/**
+ * @name My Theme - Patch
+ * @author KanjiuAkuma
+ * @version 1
+ * @description My private discord theme
+ * @source https://github.com/KanjiuAkuma/bd-stuff
+ * @website https://github.com/KanjiuAkuma/bd-stuff
+ * @invite 
+ */
+
 /* Modifications */
 
 /* remove clear vision watermark */
-.wordmarkWindows-1v0lYD:before, .wordmarkWindows-1v0lYD:after {
+.wordmarkWindows-2dq6rw:before, .wordmarkWindows-2dq6rw:after {
 	content: "" !important;
+}.wordmark-2u86JB > svg {
+	height: 0;
 }
-.container-3baos1:before, .container-3baos1:after {
+
+.container-YkUktl:before, .container-YkUktl:after {
 	content: "" !important;
 }
 
