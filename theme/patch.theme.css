@@ -21,6 +21,13 @@
 	content: "" !important;
 }
 
+/* fix window button bar above 'content' */
+.app-3xd6d0 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 /* fix spotify playing profile background */
 .root-SR8cQa>.topSectionSpotify-1lI0-P {
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) center/cover,linear-gradient(to bottom, transparent calc(95% - 55px), transparent calc(110% - 55px)) !important;
