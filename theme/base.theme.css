@@ -128,17 +128,10 @@
 
 	/* Hover member list */
 	--hml-size-hidden: 30; /* percentage shown, when the member list is hidden */
-	--hml-transition-time: 120ms; /* time it takes for the member list to show/hide */
-	--hml-background-color-shown: rgba(0, 0, 0, .3); /* background color, when member list is shown */
-	--hml-background-color-hidden: rgba(0, 0, 0, .1); /* background color, when member list is shown */
-	--hml-hover-area: 20; /* size of the area left of the member list, that reacts to mouse over, use when using size-hidden: 0*/
-
-	/* Hover server list */
-	--hsl-size-hidden: 5; /* percentage shown, when the server list is hidden */
-	--hsl-transition-time: 120ms; /* time it takes for the server list to show/hide */
-	--hsl-hover-area: 35; /* size of the area right of the server list, that reacts to mouse over */
-	--hsl-background-color-shown: rgba(0, 0, 0, .9);
-	--hsl-background-color-hidden: rgba(0, 0, 0, .1);
+	--hml-transition-time: 300ms; /* time it takes for the member list to show/hide */
+	--hml-hover-area: 0; /* size of the area left of the member list, that reacts to mouse over */
+	--hml-background-color-shown: rgba(0, 0, 0, .3);
+	--hml-background-color-hidden: rgba(0, 0, 0, .1);
 
 	/* Radial status */
 	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
