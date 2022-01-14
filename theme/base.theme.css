@@ -1,14 +1,14 @@
 /**
- * @name My Theme - Base
- * @author KanjiuAkuma
+ * @name Transparent
+ * @author Kami Kaze#0001
  * @version 1
- * @description My private discord theme
+ * @description My transparent theme based of clearvision v6.
  * @source https://github.com/KanjiuAkuma/bd-stuff
  * @website https://github.com/KanjiuAkuma/bd-stuff
  * @invite 
  */
 
-/* Credits to Zerthox and ClearVision for making the original theme. */
+/* Credits to Zerthox and ClearVision for making the original themes. */
 
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
@@ -16,7 +16,7 @@
 @import url(https://kanjiuakuma.github.io/bd-stuff/theme/patch.theme.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/addons/hover_member_list.css);
 @import url(https://kanjiuakuma.github.io/bd-stuff/addons/horizontal_server_list.css);
-@import url(https://kanjiuakuma.github.io/bd-stuff/addons/radial_status.css);
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
 
 
@@ -142,24 +142,24 @@
 
 	/* Radial status */
 	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
 
-	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
 
-	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
 
-	--rs-online-color: #00e07b; /* Colour for online status */
-	--rs-idle-color: #db8b00; /* Colour for idle status */
-	--rs-dnd-color: #f04747; /* Colour for dnd status */
-	--rs-offline-color: #636b75; /* Colour for offline status */
-	--rs-streaming-color: #643da7; /* Colour for streaming status */
-	--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-	--rs-phone-color: #00a1c2; /* #256065; Colour of the ring and phone icon when a user is on their phone |  */
+  	--rs-online-color: #43b581; /* Colour for online status */
+  	--rs-idle-color: #faa61a; /* Colour for idle status */
+  	--rs-dnd-color: #f04747; /* Colour for dnd status */
+  	--rs-offline-color: #636b75; /* Colour for offline status */
+  	--rs-streaming-color: #643da7; /* Colour for streaming status */
+  	--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 
-	--rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
 
 /* fix up tiny window controls */
