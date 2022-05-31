@@ -2,6 +2,8 @@ My Custom Discord Theme
 
 by Kami-Kaze#0001
 
+Actually most of it is Clear Vision ![https://github.com/ClearVision/ClearVision-v6] :^)
+
 ![Preview (Collapsed member list)](https://cdn.discordapp.com/attachments/751218101969748108/865273474834759680/unknown.png)
 ![Preview (Expanded member list)](https://cdn.discordapp.com/attachments/751218101969748108/865273544249573406/unknown.png)
 
