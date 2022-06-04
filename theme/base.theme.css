@@ -16,7 +16,7 @@
 @import url(https://kaze-kami.github.io/bd-stuff/theme/patch.theme.css);
 @import url(https://kaze-kami.github.io/bd-stuff/addons/hover_member_list.css);
 @import url(https://kaze-kami.github.io/bd-stuff/addons/horizontal_server_list.css);
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url(https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css);
 
 
 
@@ -153,10 +153,4 @@
   	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 
   	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-}
-
-/* fix up tiny window controls */
-.winButton-iRh8-Z > svg {
-	width: 70%;
-	height: 70%;
 }

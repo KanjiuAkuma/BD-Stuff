@@ -55,3 +55,14 @@
 	z-index: 101;
 	margin-top: 10px !important;
 }
+
+/* fix up tiny window controls */
+.winButton-iRh8-Z > svg {
+	width: 70%;
+	height: 70%;
+}
+
+/* make windows button bar not take up space */ 
+.typeWindows-2-g3UY {
+	position:  absolute;
+}
