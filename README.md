@@ -1,4 +1,4 @@
-My Custom Discord Theme
+# My Custom Discord Theme
 
 by Kami-Kaze#0001
 
